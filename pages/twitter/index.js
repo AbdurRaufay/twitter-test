@@ -1,7 +1,8 @@
 
-import React from 'react';
+import React,{useState} from 'react';
 
 const Twitter = () => {
+  const {loginSuccess,setLoginSuccess}=useState(false)
   const handleTwitterLogin = async () => {
     try {
       // Open a pop-up window for Twitter login
@@ -11,7 +12,7 @@ const Twitter = () => {
         window.addEventListener('message', (event) => {
           if (event.origin === 'http://localhost:8080' && event.data === 'twitter-auth-success') {
             // Handle successful authentication, e.g., redirect to a logged-in page
-            window.location.href = 'https://marvelous-churros-c678e1.netlify.app';
+            setLoginSuccess(true)
             window.close()
           }
         });
