@@ -57,7 +57,7 @@ const Twitter = () => {
           onClick={handleTwitterLogin}
           className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded flex items-center"
         >
-          Login with Twitter
+          Login with Twitter 
         </button>
       </div>
     </div>
