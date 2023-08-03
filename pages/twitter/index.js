@@ -11,7 +11,6 @@ const Twitter = () => {
         // Listen for messages from the pop-up window
         window.addEventListener('message', (event) => {
           if (event.origin === 'http://localhost:8080' && event.data === 'twitter-auth-success') {
-            // Handle successful authentication, e.g., redirect to a logged-in page
             setLoginSuccess(true)
             window.close()
           }
