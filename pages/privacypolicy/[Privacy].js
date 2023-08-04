@@ -1,5 +1,4 @@
 import React from 'react'
-import CookieConsent, { Cookies } from "react-cookie-consent";
 const Privacy = () => {
     return (
         <div>

@@ -3,7 +3,6 @@ import React from 'react'
 const TermsOfServices = () => {
   return (
     <div>
-        <P>
         Terms of Service
 
 Last Updated: 8/3/2023
@@ -52,7 +51,7 @@ These Terms of Service shall be governed by and construed in accordance with the
 Contact Us
 
 If you have any questions or concerns about these Terms of Service, please contact us at abdurrauf0306gmail.com.
-        </P>
+  
     </div>
   )
 }
