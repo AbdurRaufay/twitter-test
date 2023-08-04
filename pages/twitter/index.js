@@ -6,11 +6,11 @@ const Twitter = () => {
   const handleTwitterLogin = async () => {
     try {
       // Open a pop-up window for Twitter login
-      const popup = window.open('http://localhost:8080/auth/twitter', '_blank', 'width=600,height=400');
+      const popup = window.open('https://calm-gold-codfish-wrap.cyclic.cloud/auth/twitter', '_blank', 'width=600,height=400');
       if (popup) {
         // Listen for messages from the pop-up window
         window.addEventListener('message', (event) => {
-          if (event.origin === 'http://localhost:8080' && event.data === 'twitter-auth-success') {
+          if (event.origin === 'https://calm-gold-codfish-wrap.cyclic.cloud' && event.data === 'twitter-auth-success') {
             setLoginSuccess(true)
             window.close()
           }
